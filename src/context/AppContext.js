@@ -3,10 +3,10 @@ import { createContext, useState } from 'react'
 export const AppContext = createContext({})
 
 export const AppProvider = ({ children }) => {
-  const [name, setName] = useState('pika')
-  const [location, setLocation] = useState('beach')
-  const [city, setCity] = useState('Goa')
-  const [suggestion, setSuggestion] = useState('')
+  const [name, setName] = useState(null)
+  const [location, setLocation] = useState(null)
+  const [city, setCity] = useState(null)
+  const [suggestion, setSuggestion] = useState(null)
 
   const multiStepFormState = {
     name: [name, setName],
